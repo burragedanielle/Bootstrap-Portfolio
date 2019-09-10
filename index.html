@@ -1,48 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <title>Danielle's Bootstrap Portfolio</title>
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+<!-- navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background: #ffffff; border-bottom: 2px solid #ccc;">
+    <a class="navbar-brand p-2 text-white" href="#" style="background-color: #4aaaa5; font-family: Georgia, 'Times New Roman', Times, serif;">Danielle Burrage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end pr-2" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" style="color: #4aaaa5;" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" style="color: #4aaaa5;" href="#">Portfolio</a>
+            <a class="nav-item nav-link" style="color: #4aaaa5;" href="#">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- .navigation ends -->
+
+
 <body style="background-image: url('./images/full-bloom.png')">
-    <!-- navigation here -->
-    <nav class="bg-white border-bottom border-light">
-        <ul class="nav justify-content-end p-3">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">About Me</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- navigation here -->
-
-    <div class="container mt-5 mb-5 border border-light">
-        <!--about me section  -->
-        <div class="row bg-white p-4">
-            <div class="col-sm">
-                <img style="max-width: 100%;" class="image-fluid" src="./images/bioPlaceholder.JPG" alt="image of valentina cat">       
-            </div>
-
-            <div class="col-sm">
-                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif" class="text-info">About Me</h2>
-                <hr>
-                <p class="text-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro ullam quis blanditiis autem, magni consequatur excepturi delectus impedit. Asperiores ipsa cupiditate recusandae, veniam rem ipsam laudantium porro eos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, recusandae quod culpa repellendus excepturi sunt eaque? Nam corrupti ipsum molestiae! Eos veritatis suscipit minus corporis quibusdam officiis. Quisquam, sed Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim exercitationem eligendi corporis est iure tempora dolorem sunt eveniet saepe voluptate doloremque accusantium nulla qui odit placeat architecto, error sequi libero.</p>
-                <p class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cupiditate dicta at non et minima. Distinctio facilis illum accusantium incidunt, iste, temporibus, optio nihil rerum quo minus inventore atque nostrum.</p>
+<!-- body content -->
+    <div class="container">
+        <div class="row;">
+            <div class="col bg-white my-4 py-4 px-4">
+                <h2 class="pb-2" style="color: #4aaaa5;">About Me</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-9 col-xs-7">
+                        <img class="img-fluid" src="images/bioPlaceholder.JPG">
+                    </div>
+                    <div class="col-md-9 pt-md-1 pt-sm-3 pt-3">
+                        <p class="lead">[LEAD OF ABOUT ME PARAGRAPH]</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id, dolorum nulla amet
+                        praesentium quibusdam iste ad neque, quisquam aliquid labore recusandae veniam perspiciatis
+                        laboriosam! Tempore optio aperiam laborum sed!</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- about me section -->
-    </div>
+    </container>
+    <!-- .body content end -->
+
+    <!-- footer content begins -->
+    <!-- <footer class="p-2 mt-3 mt-sm-3 fixed-bottom" style="background:#666; border-top: 3px solid #4aaaa5;">
+        <p class="text-light">Copyright &copy; 2019</p>
+    </footer> -->
+        <!-- footer content ends -->
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
-<footer class="bg-secondary p-4 border-top border-info">
-    <p class="text-center text-white">copyright &copy 2019</p>
-</footer>
+</html>
